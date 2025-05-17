@@ -21,8 +21,10 @@
 
   <section class="hero text-center d-flex align-items-center" style="min-height: 100vh;">
     <div class="container">
-      <h1 class="display-4 fw-bold">Hi, I'm <span class="accent">Your Name</span>.</h1>
-      <p class="lead">I'm a game developer who builds immersive experiences with Unity.</p>
+      <h1 class="display-4 fw-bold">
+        Hatfan Sahrul Ramadhan
+    </h1>
+      <p class="lead" ><span id="typed-output"></span></p>
       <a href="#projects" class="btn btn-accent mt-4">View Projects</a>
     </div>
   </section>
@@ -63,5 +65,23 @@
       <p>&copy; 2025 Nama Anda. Built with Bootstrap. Inspired by Brittany Chiang.</p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+    var typed = new Typed("#typed-output", {
+        strings: [
+        "Game Programmer",
+        "Computer Vision Engineer",
+        "Unity Developer",
+        "XR Enthusiast"
+        ],
+        typeSpeed: 60,
+        backSpeed: 40,
+        backDelay: 3000,
+        loop: true,
+        showCursor: true,
+        cursorChar: '|',
+    });
+    </script>
+
 </body>
 </html>
