@@ -43,7 +43,7 @@
 
   <section class="tech-tools section">
     <div class="container text-center">
-        <h2 class="mb-4">Tech & Tools</h2>
+        <h2 class="mb-4 accent">Tech & Tools</h2>
         <div class="tech-grid">
         <div class="tech-item" title="C">
             <iconify-icon icon="simple-icons:c"></iconify-icon>
@@ -91,21 +91,15 @@
     </div>
     </section>
 
-  <section id="projects" class="section bg-dark">
-    <div class="container">
-      <h2 class="accent">Projects</h2>
-      <div class="mt-4">
-        <h5>Habertan - Game Edukasi Sampah</h5>
-        <p>A game to teach kids about waste classification and forest conservation in a fun and interactive way.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="mt-4">
-        <h5>Football XR Simulation</h5>
-        <p>Real-time simulation for football-playing humanoid robots, integrated with Unity visualizations and localization systems.</p>
-        <a href="#">View Project</a>
-      </div>
-    </div>
-  </section>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="accent">Projects</h2>
+            <div id="project-list" class="project-grid"></div>
+            <div class="text-center mt-3">
+            <button class="btn btn-accent" onclick="toggleProjects()">View More</button>
+            </div>
+        </div>
+    </section>
 
   <section id="contact" class="section">
     <div class="container">
@@ -120,6 +114,7 @@
       <p>&copy; 2025 Nama Anda. Built with Bootstrap. Inspired by Brittany Chiang.</p>
     </div>
   </footer>
+  <script src="scripts/project.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
     var typed = new Typed("#typed-output", {
