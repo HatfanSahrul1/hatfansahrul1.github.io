@@ -11,13 +11,22 @@ function renderProjects(limit = 3) {
     const card = document.createElement("div");
     card.className = "project-card";
     card.innerHTML = `
-      <img src="${p.image}" alt="${p.title}" class="project-img">
-      <div class="project-content">
-        <h5>${p.title}</h5>
-        <p>${p.description}</p>
-        ${p.achievements ? `<ul>${p.achievements.map(a => `<li>${a}</li>`).join("")}</ul>` : ""}
+        <img src="${p.image}" alt="${p.title}" class="project-img">
+        <div class="project-content">
+            <h5>${p.title}</h5>
+            <p>${p.description}</p>
+
+            ${p.achievement ? `
+            <div class="project-achievements">
+                <span class="achievement-badge">${p.achievement[0]}</span>
+                ${p.achievement.length > 1 ? `
+                <span class="achievement-badge extra-count">+${p.achievement.length - 1}</span>
+                ` : ""}
+            </div>
+            ` : ""}
+
         ${p.link ? `<a href="${p.link}" target="_blank">View Project</a>` : ""}
-      </div>
+        </div>
     `;
     container.appendChild(card);
   });

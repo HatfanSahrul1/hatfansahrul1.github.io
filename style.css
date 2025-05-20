@@ -121,3 +121,23 @@ footer {
   font-size: 0.85rem;
   color: #ff00ff;
 }
+
+.project-achievements {
+  margin: 0.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.achievement-badge {
+  color: #ffd700; /* Font dan border warna emas */
+  border: 1px solid #ffd700;
+  background-color: rgba(255, 215, 0, 0.2); /* Emas transparan 20% */
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: normal; /* agar bisa line-wrap */
+  max-width: 100%;
+  word-break: break-word;
+}
