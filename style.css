@@ -32,3 +32,50 @@ footer {
   text-align: center;
   font-size: 0.9rem;
 }
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.tech-item {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.tech-item iconify-icon {
+  font-size: 48px;
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.tech-item:hover iconify-icon {
+  color: #ff2db2; /* magenta highlight */
+  transform: scale(1.2);
+}
+
+/* Optional tooltip using native `title` attribute */
+.tech-item:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -1.8rem;
+  background-color: #222;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 1;
+  pointer-events: none;
+  transform: translateY(5px);
+}
+
+/* Optional fade-in for tooltip */
+.tech-item::after {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
