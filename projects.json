@@ -1,15 +1,16 @@
 [
   {
-    "title": "ARKSIAH - Keduk Beji Tradition",
-    "description": "Educational AR-based game about Legend of Keduk Beji.",
-    "image": "thumbnails/Arkisah.jpeg",
-    "achievement": ["1st place in Technopreneur SMA AWARDS 2021"]
+    "title": "Kala the Dark Ritual",
+    "description": "An FPS games about Indonesian shaman who is hired to perform an exorcism in a colonial-era mansion.",
+    "image": "thumbnails/kala.jpg",
+    "achievement": ["2nd place in Local Game Selection Surakarta 2025"],
+    "link": "https://cihuy-games.itch.io/kala-the-dark-ritual"
   },
   {
-    "title": "Educells Dungeon",
-    "description": "An educational game as a Biology Learning Media Chapter Introduction to Animal and Plant Cells using Unity",
-    "image": "thumbnails/Educells.png",
-    "achievement": ["1st place in PROCOMMIT V12 ITS 2022"]
+    "title": "Catch the Oligarks",
+    "description": "Endless-based game where player catch enemy with hook.",
+    "image": "thumbnails/kala.png",
+    "achievement": ["1st place in Technopreneur SMA AWARDS 2021"]
   },
   {
     "title": "Si-ABaS",
@@ -18,10 +19,10 @@
     "achievement": ["1st place in EMWEEK 11 2024","Best Presentation in BIZMART PPNS 2024","Semifinal in Samsung Solve for Tomorrow 2023"]
   },
   {
-    "title": "Educells Dungeon",
-    "description": "An educational game as a Biology Learning Media Chapter Introduction to Animal and Plant Cells using Unity",
-    "image": "thumbnails/Educells.png",
-    "achievement": ["1st place in PROCOMMIT V12 ITS 2022"]
+    "title": "ARKSIAH - Keduk Beji Tradition",
+    "description": "Educational AR-based game about Legend of Keduk Beji.",
+    "image": "thumbnails/Arkisah.jpeg",
+    "achievement": ["1st place in Technopreneur SMA AWARDS 2021"]
   },
   {
     "title": "Educells Dungeon",
