@@ -184,3 +184,21 @@ footer {
 #project-wrapper.collapsed {
   max-height: 600px; /* tinggi saat menampilkan 3 project */
 }
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9rem;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-accent {
+  background-color: #ff00ff;
+  color: white;
+}
+
+.btn-accent:hover {
+  background-color: #e600e6;
+}
