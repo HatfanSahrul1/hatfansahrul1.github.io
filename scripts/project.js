@@ -37,7 +37,19 @@ function renderProjects(limit = 3) {
 function toggleProjects() {
   expanded = !expanded;
   renderProjects();
-  document.querySelector("button").textContent = expanded ? "View Less" : "View More";
+
+  const wrapper = document.getElementById("project-wrapper");
+  const btn = document.querySelector("#toggle-projects-btn");
+
+  if (expanded) {
+    wrapper.classList.remove("collapsed");
+    btn.textContent = "View Less";
+  } else {
+    wrapper.classList.add("collapsed");
+    btn.textContent = "View More";
+
+    wrapper.scrollIntoView({ behavior: 'smooth' });
+  }
 }
 
 fetch('projects.json')

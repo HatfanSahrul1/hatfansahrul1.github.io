@@ -94,9 +94,11 @@
     <section id="projects" class="section">
         <div class="container">
             <h2 class="accent">Projects</h2>
-            <div id="project-list" class="project-grid"></div>
+            <div id="project-wrapper" class="collapsed">
+                <div id="project-list" class="project-grid"></div>
+            </div>
             <div class="text-center mt-3">
-            <button class="btn btn-accent" onclick="toggleProjects()">View More</button>
+            <button id="toggle-projects-btn" class="btn btn-accent" onclick="toggleProjects()">View More</button>
             </div>
         </div>
     </section>
