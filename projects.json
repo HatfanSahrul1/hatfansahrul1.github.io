@@ -1,7 +1,7 @@
 [
   {
     "title": "Kala the Dark Ritual",
-    "description": "An FPS games about Indonesian shaman who is hired to perform an exorcism in a colonial-era mansion.",
+    "description": "A FPS games about Indonesian shaman who is hired to perform an exorcism in a colonial-era mansion.",
     "image": "thumbnails/kala.jpg",
     "achievement": ["2nd place in Local Game Selection Surakarta 2025"],
     "link": "https://cihuy-games.itch.io/kala-the-dark-ritual"
@@ -12,8 +12,13 @@
     "image": "thumbnails/cto.png"
   },
   {
+    "title": "D'Scroll Inspector",
+    "description": "A fantasy-themed game where you play as a scroll inspector tasked with reviewing budget proposals to prevent corruption.",
+    "image": "thumbnails/dsi.png"
+  },
+  {
     "title": "Si-ABaS",
-    "description": "Si-ABaS (Aplikasi Apotek Bank Sampah) an ",
+    "description": "Si-ABaS (Apotek Bank Sampah) is a platform that allows users to purchase medicine from pharmacies using balance earned by exchanging recyclable waste.",
     "image": "thumbnails/siabas.png",
     "achievement": ["1st place in EMWEEK 11 2024","Best Presentation in BIZMART PPNS 2024","Semifinal in Samsung Solve for Tomorrow 2023"]
   },
