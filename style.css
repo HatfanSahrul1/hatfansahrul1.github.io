@@ -178,11 +178,7 @@ footer {
 #project-wrapper {
   overflow: hidden;
   transition: max-height 0.6s ease;
-  max-height: 1000px; /* tinggi saat terbuka */
-}
-
-#project-wrapper.collapsed {
-  max-height: 600px; /* tinggi saat menampilkan 3 project */
+  max-height: 720px; /* Tinggi saat collapsed */
 }
 
 .btn {

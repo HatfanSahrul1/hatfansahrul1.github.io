@@ -11,27 +11,31 @@ function renderProjects(limit = 3) {
     const card = document.createElement("div");
     card.className = "project-card";
     card.innerHTML = `
-        <div class="image-wrapper">
-            <img src="${p.image}" alt="${p.title} background" class="project-bg-blur">
-            <img src="${p.image}" alt="${p.title}" class="project-img">
-        </div>
-        <div class="project-content">
-            <h5>${p.title}</h5>
-            <p>${p.description}</p>
+      <div class="image-wrapper">
+        <img src="${p.image}" alt="${p.title} background" class="project-bg-blur">
+        <img src="${p.image}" alt="${p.title}" class="project-img">
+      </div>
+      <div class="project-content">
+        <h5>${p.title}</h5>
+        <p>${p.description}</p>
 
-            ${p.achievement ? `
-            <div class="project-achievements">
-                <span class="achievement-badge">${p.achievement[0]}</span>
-                ${p.achievement.length > 1 ? `
-                <span class="achievement-badge">+${p.achievement.length - 1}</span>
-                ` : ""}
-            </div>` : ""}
+        ${p.achievement ? `
+          <div class="project-achievements">
+            <span class="achievement-badge">${p.achievement[0]}</span>
+            ${p.achievement.length > 1 ? `
+              <span class="achievement-badge">+${p.achievement.length - 1}</span>
+            ` : ""}
+          </div>` : ""}
 
-            ${p.link ? `<a href="${p.link}" target="_blank">View Project</a>` : ""}
-        </div>
-`;
+        ${p.link ? `<a href="${p.link}" target="_blank">View Project</a>` : ""}
+      </div>
+    `;
     container.appendChild(card);
   });
+
+  // Reset maxHeight for smooth transition
+  const wrapper = document.getElementById("project-wrapper");
+  wrapper.style.maxHeight = wrapper.scrollHeight + "px";
 }
 
 function toggleProjects() {
@@ -39,19 +43,20 @@ function toggleProjects() {
   renderProjects();
 
   const wrapper = document.getElementById("project-wrapper");
-  const btn = document.querySelector("#toggle-projects-btn");
+  const btn = document.getElementById("toggle-projects-btn");
 
   if (expanded) {
-    wrapper.classList.remove("collapsed");
+    wrapper.style.maxHeight = wrapper.scrollHeight + "px";
     btn.textContent = "View Less";
   } else {
-    wrapper.classList.add("collapsed");
+    wrapper.style.maxHeight = "720px"; // Tinggi awal saat collapsed
     btn.textContent = "View More";
 
     wrapper.scrollIntoView({ behavior: 'smooth' });
   }
 }
 
+// Initial load
 fetch('projects.json')
   .then(res => res.json())
   .then(data => {
