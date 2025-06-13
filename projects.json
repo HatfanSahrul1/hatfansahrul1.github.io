@@ -17,6 +17,11 @@
     "image": "thumbnails/dsi.png"
   },
   {
+    "title": "UpperCup",
+    "description": "Simple game of cup floating and dogding obstacle endlessly. Game made by using Raylib",
+    "image": "thumbnails/uc.png"
+  },
+  {
     "title": "Si-ABaS",
     "description": "Si-ABaS (Apotek Bank Sampah) is a platform that allows users to purchase medicine from pharmacies using balance earned by exchanging recyclable waste.",
     "image": "thumbnails/siabas.png",
