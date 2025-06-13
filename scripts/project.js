@@ -13,7 +13,11 @@ function renderProjects(limit = 3) {
     card.innerHTML = `
       <div class="image-wrapper">
         <img src="${p.image}" alt="${p.title} background" class="project-bg-blur">
-        <img src="${p.image}" alt="${p.title}" class="project-img">
+        <img src="${p.image}" 
+          alt="${p.title}" 
+          class="project-img"
+          ${p.preview ? `data-preview="${p.preview}"` : ""}
+          ${p.preview ? `data-static="${p.image}"` : ""}>
       </div>
       <div class="project-content">
         <h5>${p.title}</h5>
@@ -31,6 +35,15 @@ function renderProjects(limit = 3) {
       </div>
     `;
     container.appendChild(card);
+    if (p.preview) {
+      const img = card.querySelector('.project-img');
+      img.addEventListener('mouseenter', () => {
+        img.src = p.preview;
+      });
+      img.addEventListener('mouseleave', () => {
+        img.src = p.image;
+      });
+    }
   });
 
   // Reset maxHeight for smooth transition

@@ -19,7 +19,8 @@
   {
     "title": "UpperCup",
     "description": "Simple game of cup floating and dogding obstacle endlessly. Game made by using Raylib",
-    "image": "thumbnails/uc.png"
+    "image": "thumbnails/uc.png",
+    "preview": "previews/UpperCup.gif"
   },
   {
     "title": "Si-ABaS",
